@@ -1,0 +1,240 @@
+html,
+body {
+
+    margin:0;
+    height:100%;
+
+}
+
+#container{
+    display:flex;
+    height:100vh;
+}
+
+#map{
+    flex:1;
+}
+
+#sidebar{
+    display: flex;
+
+    flex-direction: column;
+
+    width:340px;
+
+    background:white;
+
+    padding:20px;
+
+    overflow-y:auto;
+
+    border-left:1px solid #ddd;
+
+    box-shadow:-2px 0 10px rgba(0,0,0,0.1);
+
+}
+
+#info{
+
+    width:300px;
+    padding:20px;
+
+    background:white;
+
+    border-left:1px solid #ddd;
+
+    font-family:Arial;
+
+}
+
+.label {
+
+    background: transparent;
+
+    border: none;
+
+    box-shadow: none;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 8px;
+
+    text-align: center;
+
+    line-height:10px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    text-align:left;
+
+    padding:6px;
+
+    width:fit-content;
+
+}
+
+td{
+
+    padding:6px;
+
+}
+
+tr{
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+h3{
+
+    color: rgb(70, 95, 102);
+
+}
+
+.party-logo{
+
+    width:30px;
+
+    height:30px;
+
+    vertical-align:middle;
+
+    margin-right:8px;
+
+}
+
+.party-logo2{
+
+    width:70px;
+
+    height:50px;
+
+    vertical-align:middle;
+
+    margin-right:8px;
+
+}
+
+#btn2022{
+
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+}
+
+#btn2026{
+
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+}
+
+
+#resetBtn{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #007bff;
+    color: white;
+
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#resetBtn:hover{
+    background: #0056b3;
+}
+
+#search-container{
+
+    position: relative;
+
+    margin-bottom:20px;
+
+}
+
+#searchBox{
+
+    width:100%;
+
+    padding:10px;
+
+    font-size:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:6px;
+
+    box-sizing:border-box;
+
+}
+
+#searchResults{
+
+    position:absolute;
+
+    width:100%;
+
+    background:white;
+
+    border:1px solid #ccc;
+
+    border-top:none;
+
+    max-height:250px;
+
+    overflow-y:auto;
+
+    z-index:1000;
+
+}
+
+.search-item{
+
+    padding:10px;
+
+    cursor:pointer;
+
+}
+
+.search-item:hover{
+
+    background:#f2f2f2;
+
+}
+
+#footer{
+    margin-top: auto;
+    padding-top: 15px;
+
+    font-size: 11px;
+    color: #777;
+    line-height: 1.5;
+}
+
+#footer p{
+    margin: 3px 0;
+}
+
+#footer hr{
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-bottom: 10px;
+}
