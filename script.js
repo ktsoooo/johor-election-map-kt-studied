@@ -364,6 +364,20 @@ function updateInfo(properties){
                 </td>
             </tr>
 
+            <tr>
+                <th>Total Counted Votes</th>
+                <td>
+                    ${properties.TotalVotes}
+                </td>
+            </tr>
+
+            <tr>
+                <th>Missing Votes</th>
+                <td>
+                    ${properties.MissingVot}
+                </td>
+            </tr>
+
         </table>
 
     `;
