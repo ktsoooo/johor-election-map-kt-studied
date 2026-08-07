@@ -326,6 +326,20 @@ function updateInfo(properties){
                 </td>
             </tr>
 
+            <tr>
+                <th>Total Counted Votes</th>
+                <td>
+                    ${properties.TotalVotes}
+                </td>
+            </tr>
+
+            <tr>
+                <th>Missing Votes</th>
+                <td>
+                    ${properties.MissingVot}
+                </td>
+            </tr>
+
         </table>
 
         <h3>Johor Election 2022</h3>
@@ -361,20 +375,6 @@ function updateInfo(properties){
                 <th>By-election 2024</th>
                 <td>
                     ${properties.ExtraE2024}
-                </td>
-            </tr>
-
-            <tr>
-                <th>Total Counted Votes</th>
-                <td>
-                    ${properties.TotalVotes}
-                </td>
-            </tr>
-
-            <tr>
-                <th>Missing Votes</th>
-                <td>
-                    ${properties.MissingVot}
                 </td>
             </tr>
 
