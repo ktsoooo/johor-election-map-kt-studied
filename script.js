@@ -91,6 +91,9 @@ function getPartyLogo(party){
 
         case "MUDA":
             return "logo/MUDA.png";
+        
+        case "Muda":
+            return "logo/MUDA.png";
 
         case "PAS":
             return "logo/PAS.png";
@@ -101,7 +104,77 @@ function getPartyLogo(party){
         case "UMNO":
             return "logo/UMNO.png";
 
+        case "PH-AMANAH":
+            return "logo/AMANAH.png";
 
+        case "PH-Amanah":
+            return "logo/AMANAH.png";
+
+        case "PN-Bersatu":
+            return "logo/BERSATU.png";
+
+        case "PH-DAP":
+            return "logo/DAP.png";
+
+        case "BN-MCA":
+            return "logo/MCA.png";
+
+        case "BN-MIC":
+            return "logo/MIC.png";
+
+        case "PN-PAS":
+            return "logo/PAS.png";
+
+        case "PN-Pas":
+            return "logo/PAS.png";
+
+        case "PH-PKR":
+            return "logo/PKR.png";
+
+        case "BN-UMNO":
+            return "logo/UMNO.png";
+
+        case "BERJASA":
+            return "logo/BERJASA.png";
+
+        case "PN-MIPP":
+          return "logo/MIPP.png";  
+
+        case "PN-GERAKAN":
+          return "logo/GERAKAN.png"; 
+
+        case "ASLI":
+          return "logo/ASLI.png";
+
+        case "PN-WAWASAN":
+          return "logo/WAWASAN.png";
+
+        case "BEBAS":
+          return "logo/BEBAS.png";
+
+        case "PSM":
+          return "logo/PSM.png";
+
+        case "Bersama":
+          return "logo/BERSAMA.png";
+
+        case "Bebas-Kereta Api":
+          return "logo/BebasKA.png";
+          
+        case "Bebas-Kunci":
+          return "logo/BebasK.png";
+          
+        case "Bebas-Pen":
+          return "logo/BebasP.png";
+          
+        case "Bebas-Gajah":
+          return "logo/BebasG.png";
+
+        case "PN-Pejuang":
+          return "logo/PEJUANG.png";
+
+        default:
+          return "logo/NONE.png";
 
     }
 
@@ -124,6 +197,19 @@ function getPartyLogo2(party){
           return "logo/MUDA.png";
     }
 
+}
+
+function getWin(CalonWin){
+
+    switch(CalonWin){
+
+        case "YES":
+          return "logo/WIN.png";
+
+        default:
+          return "logo/NONE.png";
+
+    }
 }
 
 
@@ -158,24 +244,73 @@ function updateInfo(properties){
         
         <h4><img src="${getPartyLogo2(properties.PRN2026)}" class="party-logo2"></h4>
         
+
+
         <table>
 
             <tr>
-                <th>Party</th>
-                <td>
-                    
-                    <img src="${getPartyLogo(properties.OwnParty)}" class="party-logo">
-                    ${properties.PRN2026}
-                    ${properties.OwnParty}
-                </td>
+                <td>1&nbsp;&nbsp
+                <img src="${getPartyLogo(properties.Calon1Part)}" class="party-logo">
+                ${properties.Calon1Part} 
+                <br>
+                ${properties.Calon1}</td>
+                <td><img src="${getWin(properties.Calon1Win)}" class="Win-logo"></td>
+                <td>${properties.Calon1Und}</td>
             </tr>
 
             <tr>
-                <th class="section">Winner</th>
-                <td>
-                    ${properties.Winner2026}
+                <td>2&nbsp;&nbsp
+                <img src="${getPartyLogo(properties.Calon2Part)}" class="party-logo">
+                ${properties.Calon2Part} 
+                <br>
+                ${properties.Calon2}
                 </td>
+                <td><img src="${getWin(properties.Calon2Win)}" class="Win-logo"></td>
+                <td>${properties.Calon2Und}</td>
             </tr>
+
+            ${properties.Calon3Und > 0 ? `
+            <tr>
+                <td>3&nbsp;&nbsp
+                <img src="${getPartyLogo(properties.Calon3Part)}" class="party-logo">
+                ${properties.Calon3Part}
+                <br> 
+                ${properties.Calon3}
+                </td>
+                <td><img src="${getWin(properties.Calon3Win)}" class="Win-logo"></td>
+                <td>${properties.Calon3Und}</td>
+            </tr>
+            ` : ""}                
+
+            ${properties.Calon4Und > 0 ? `
+            <tr>
+                <td>4&nbsp;&nbsp
+                <img src="${getPartyLogo(properties.Calon4Part)}" class="party-logo">
+                ${properties.Calon4Part} 
+                <br>
+                ${properties.Calon4}
+                </td>
+                <td><img src="${getWin(properties.Calon4Win)}" class="Win-logo"></td>
+                <td>${properties.Calon4Und}</td>
+            </tr>
+        ` : ""}            
+
+            ${properties.Calon5Und > 0 ? `      
+            <tr>
+                <td>5&nbsp;&nbsp
+                <img src="${getPartyLogo(properties.Calon5Part)}" class="party-logo">
+                ${properties.Calon5Part} 
+                <br>
+                ${properties.Calon5}
+                </td>
+                <td><img src="${getWin(properties.Calon5Win)}" class="Win-logo"></td>
+                <td>${properties.Calon5Und}</td>
+            </tr>
+        ` : ""}     
+
+        </table>
+
+        <table>
             
             <tr>
                 <th>Majority Votes</th>
