@@ -140,16 +140,20 @@ h3{
 
 #btn2022{
 
+    padding: 5px;
     background: #007bff;
     color: white;
-    border-radius: 6px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 #btn2026{
 
+    padding: 5px;
     background: #007bff;
     color: white;
-    border-radius: 6px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 
