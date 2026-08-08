@@ -493,7 +493,8 @@ function searchFeature() {
             p.NAMA_DUN,
             p.KOD_DUN,
             p.Winner2026,
-            p.Pemenang
+            p.Pemenang,
+            p.JOHOR_DU_2
         ]
         .filter(Boolean)
         .map(v => String(v).trim().toLowerCase())
@@ -507,7 +508,7 @@ function searchFeature() {
 
             item.className = "search-item";
             item.innerHTML = `
-            <strong>${p.KOD_DUN} ${p.NAMA_DUN}</strong><br>
+            <strong>${p.KOD_DUN} ${p.NAMA_DUN} (${p.JOHOR_DU_2})</strong><br>
             <hr>
             <small>${p.Winner2026} (2026)</small>
             <tr>
